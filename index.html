@@ -7,7 +7,49 @@
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+    <section>
+      <h1 id = "title">Complete your survey!</h1>
+    </section>
+    <br>
+    <section>
+      <p id = "description">...</p>
+    </section>
+    <form id = "survey-form">
+      <section>
+        <label id = "name-label">Name:</label>
+        <input id = "name" type = "text" placeholder = "Juan Perez" required>
+      </section>
+      <section>
+        <label id = "email-label">E-Mail:</label>
+        <input id = "email" type = "email" placeholder = "juan@perez.com" required>
+      </section>
+      <section>
+        <label id = "number-label">Age:</label>
+        <input id = "number" type = "number" placeholder = "18" min = "18" max = "99" required>
+      </section>
+      <section>
+        <label id = "number-label">Which option best describes your current role?</label>
+        <select id = "dropdown">
+          <option></option>
+          <option></option>
+        </select>
+      </section>
+      <section>
+        <input type = "radio" name = "radio" value = "Definitely">
+        <input type = "radio" name = "radio" value = "Maybe">
+        <input type = "radio" name = "radio" value = "Not sure">
+      </section>
+      <section>
+        <input type = "checkbox" name = "checkbox" value = "Front end">
+        <input type = "checkbox" name = "checkbox" value = "Back end">
+        <input type = "checkbox" name = "checkbox" value = "Full stack">
+      </section>
+      <section>
+        <textarea id = "extra" name = "extra" rows = "3" cols = "40" placeholder = "..."></textarea>
+      </section>
+      <input type = "submit" id = "submit" value = "Submit">
+    </form>
+
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
