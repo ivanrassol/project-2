@@ -7,64 +7,63 @@
   </head>
 
   <body>
-    <section>
-      <h1 id = "title">Complete your survey!</h1>
-    </section>
-    <br>
-    <section>
-      <p id = "description">...</p>
-    </section>
-    <form id = "survey-form">
+    <div id="container">
       <section>
-        <label id = "name-label">Name:</label>
-        <input id = "name" type = "text" placeholder = "Juan Perez" required>
+        <h1 id = "title">Complete your survey!</h1>
       </section>
+      <br>
       <section>
-        <label id = "email-label">E-Mail:</label>
-        <input id = "email" type = "email" placeholder = "juan@perez.com" required>
+        <p id = "description">Let us know better about you</p>
       </section>
-      <section>
-        <label id = "number-label">Age:</label>
-        <input id = "number" type = "number" placeholder = "18" min = "18" max = "99" required>
-      </section>
-      <section>
-        <label id = "number-label">Which option best describes your current role?</label>
-        <select id = "dropdown">
-          <option></option>
-          <option></option>
-        </select>
-      </section>
-      <section>
-        <input type = "radio" name = "radio" value = "Definitely">
-        <input type = "radio" name = "radio" value = "Maybe">
-        <input type = "radio" name = "radio" value = "Not sure">
-      </section>
-      <section>
-        <input type = "checkbox" name = "checkbox" value = "Front end">
-        <input type = "checkbox" name = "checkbox" value = "Back end">
-        <input type = "checkbox" name = "checkbox" value = "Full stack">
-      </section>
-      <section>
-        <textarea id = "extra" name = "extra" rows = "3" cols = "40" placeholder = "..."></textarea>
-      </section>
-      <input type = "submit" id = "submit" value = "Submit">
-    </form>
+      <form id = "survey-form">
+        <section>
+          <label id = "name-label">Name:</label>
+          <input id = "name" type = "text" placeholder = "Juan Perez" required>
+        </section>
+        <section>
+          <label id = "email-label">E-Mail:</label>
+          <input id = "email" type = "email" placeholder = "juan@perez.com" required>
+        </section>
+        <section>
+          <label id = "number-label">Age:</label>
+          <input id = "number" type = "number" placeholder = "18" min = "18" max = "99" required>
+        </section>
+        <br>
+        <section>
+          <label id = "number-label">Which option best describes your current role?</label>
+          <br>
+          <select id = "dropdown">
+            <option>Entry level / Trainee</option>
+            <option>Junior Developer</option>
+            <option>Senior Developer</option>
+            <option>Project Manager</option>
+          </select>
+        </section>
+        <br>
+        <section>
+          <label>Are you satisfied with our course?:</label><br>
+          <input type = "radio" name = "radio" value = "Definitely">Definitely<br>
+          <input type = "radio" name = "radio" value = "Maybe">Maybe<br>
+          <input type = "radio" name = "radio" value = "Not sure">Not sure<br>
+        </section>
+        <br>
+        <section>
+          <label>Which is your main area of expertise?:</label><br>
+          <input type = "checkbox" name = "checkbox" value = "Front end">Front end<br>
+          <input type = "checkbox" name = "checkbox" value = "Back end">Back end<br>
+          <input type = "checkbox" name = "checkbox" value = "Full stack">Full stack<br>
+        </section>
+        <br>
+        <section>
+          <label>Any additional suggestions you want to give us?</label><br>
+          <textarea id = "extra" name = "extra" rows = "3" cols = "40" placeholder = "..."></textarea>
+        </section>
+        <input type = "submit" id = "submit" value = "Submit">
+      </form>
+    </div>
 
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
     <script  src="js/index.js"></script>
   </body>
 </html>
